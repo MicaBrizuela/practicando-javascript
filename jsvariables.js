@@ -12,7 +12,7 @@ function fun1() {
 function fun2() {
 	var output = "";
 	if (typeof myGlobal != "undefined") {
-	output += "myGlobal: " + myGlobal + "\n";
+	output += "myGlobal: " + myGlobal + "\n"; //nueva linea de consola porque todos los console.log salen unidos
 	}
 	if (typeof oopsGlobal != "undefined") {
 	output += "oopsGlobal: " + oopsGlobal;
