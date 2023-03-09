@@ -3,9 +3,10 @@ console.log("hello")
 
 var myGlobal = 10; //se ve en todo el codigo
 
-function fun1() {
+function fun1(NotGlobal) {
 	oopsGlobal = 5; //es global
-	var NotGlobal = 8; // no es global
+	//var NotGlobal = 8; // no es global
+  
   console.log("NotGlobal_1: " + NotGlobal)
 } 
 
@@ -22,5 +23,5 @@ function fun2() {
 	}
 	console.log(output);
 }
-fun1();
+fun1(2);
 fun2();
