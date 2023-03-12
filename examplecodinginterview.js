@@ -39,4 +39,23 @@ first attempt: undefined is not a str
 second attempt: what happens to a str with no recurring elements
 third attempt: it needs to return a value not show it in console. but the idea is ok, can you come up with a solution without using array methods?
 
+##################
+
+  Their solution
+  
+##################
+
+def first_recurring(given_string):
+  counts = {} //dictionary or hash table {key:value; key:value}
+  for char in given_string:
+    if char in counts:
+      return char
+    else: //you can use else or not 
+      counts[char] = 1 //value can be anything in this case is 1
+  return None // if none of the others work that means there are no recurring characters
+
+  
+    
+
 */
+
